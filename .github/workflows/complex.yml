@@ -5,17 +5,17 @@ jobs:
   ubuntu: 
     runs-on: ubuntu-latest
     steps:
-    - runs: date
+    - run: date
   window: 
       runs-on: windows-latest
       steps:
-      - runs: date
+      - run: date
   macos: 
       runs-on: macos-latest
       steps:
-      - runs: date
+      - run: date
   ubuntudepends: 
       needs: [ubuntu, windows, macos]
       runs-on: ubuntu-latest
       steps:
-      - runs: date
+      - run: date
